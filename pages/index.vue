@@ -2,6 +2,11 @@
   <div class="page-index">
     <Logos />
     <Examples />
+    <ul>
+      <li>
+        <NuxtLink to="/dialog">HTML5 Dialog</NuxtLink>
+      </li>
+    </ul>
   </div>
 </template>
 

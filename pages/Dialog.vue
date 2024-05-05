@@ -30,12 +30,8 @@ onMounted(() => {
       <p>这是一个 dialog</p>
       <slot></slot>
       <form method="dialog" class="grid gap-x-8 gap-y-4 grid-cols-3">
-        <button value="confirm" @click="($event) => $event.preventDefault()">
-          Confirm
-        </button>
-        <button value="cancel" @click="($event) => $event.preventDefault()">
-          Cancel
-        </button>
+        <button value="confirm">Confirm</button>
+        <button value="cancel">Cancel</button>
       </form>
     </dialog>
   </div>
