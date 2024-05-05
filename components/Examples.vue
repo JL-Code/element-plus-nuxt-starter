@@ -75,4 +75,9 @@ const dialogValue = ref(false);
   <p>Dialog</p>
   <ElButton @click="dialogValue = true">openDialog</ElButton>
   <el-dialog v-model="dialogValue"> 我是 Dialog </el-dialog>
+
+  <p>分页组件</p>
+  <div class="flex justify-center">
+    <el-pagination background layout="prev, pager, next" :total="1000" />
+  </div>
 </template>
