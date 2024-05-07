@@ -80,4 +80,8 @@ const dialogValue = ref(false);
   <div class="flex justify-center">
     <el-pagination background layout="prev, pager, next" :total="1000" />
   </div>
+
+  <p>
+    <NuxtLink to="/examples/game-management">Game Management</NuxtLink>
+  </p>
 </template>

@@ -30,7 +30,7 @@ const handleNodeClick = (data: Tree) => {
   $emits("click", data.label);
 };
 const loading = ref(false);
-const currentNodeKey = ref<number>();
+const currentNodeKey = ref<number>(0);
 const loadData = (game: string) => {
   console.log("[BackendCategoryList] loadData", game);
   loading.value = true;
@@ -73,7 +73,7 @@ const loadData = (game: string) => {
 
   setTimeout(() => {
     // 默认选中第一个节点
-    currentNodeKey.value = data.value[0].id;
+    currentNodeKey.value = game === "Diablo4" ? data.value[0].id : 1;
     loading.value = false;
   }, 400);
 };
